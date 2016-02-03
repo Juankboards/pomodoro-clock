@@ -2,32 +2,36 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" concol8t="IE=edge">    
+	    <meta http-equiv="X-UA-Compatible" concol8t="IE=edge"> 
+	    <meta name="viewport" content="width=device-width, initial-scale=1">   
 	    <link rel="stylesheet" href="css/style.css">	
 	    <link href='' rel='stylesheet' type='text/css'>
-		<link href="css/bootstrap.min.css" rel="stylesheet">		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>	
 		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 	    <script src="js/javascript.js"></script>
 		<title>Pomodoro clock</title>
 	</head>
 	<body>
 		<div class="container-flex">
-			<h2 id="tittle">Welcome to your favorite Pomodoro Clock<br><span id="appName">Just Do It!</span></h1>
+			<h1 id="tittle">Welcome to GifodoroClock</h1>
+			<h2 id="secondTittle" style="display: none">Just do it!</h2>
 
-			<div class="timeSet">
+			<div id="timeSet">
 				<label for="break">Break time</label>
-				<input id="break" type="number" value="5">
+				<input id="break" type="text" value="5">
 				<label for="Work">Work time</label>
-				<input id="work" type="number" value="25">
+				<input id="work" type="text" value="25">
 				<label for="sessions">Sessions</label>
-				<input id="sessions" type="number" value="2">
-				<button id="start">Lets Do It</button>				
+				<input id="sessions" type="text" value="2">
+				<button class="btn" id="start"><span class="button-text">Lets Do It</span></button>				
 			</div>
 			<div id="counterButtons">
-				<button id="startAgain">Set again timer</button>
+				<button class="btn" id="setTime">Set time</button>
+				<button class="btn" id="pause">Pause timer</button>
+				<button class="btn" id="startAgain">Start timer</button>
 			</div>
-		</div>
-				
+		</div>				
 	</body>
 </html>
 
